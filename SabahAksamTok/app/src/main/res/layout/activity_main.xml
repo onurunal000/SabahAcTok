@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etIlacAdi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:hint="İlaç Adı"
+            android:inputType="textPersonName"
+            android:scrollbarSize="25dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/etSabahAksam"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etSabahAksam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Sabah / Öğlen / Akşam"
+            android:inputType="textPersonName"
+            android:scrollbarSize="25dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/etAcTok"
+            app:layout_constraintEnd_toEndOf="@+id/etIlacAdi"
+            app:layout_constraintStart_toStartOf="@+id/etIlacAdi"
+            app:layout_constraintTop_toBottomOf="@+id/etIlacAdi" />
+
+        <EditText
+            android:id="@+id/etAcTok"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Aç / Tok"
+            android:inputType="textPersonName"
+            android:scrollbarSize="25dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/etSaat"
+            app:layout_constraintEnd_toEndOf="@+id/etSabahAksam"
+            app:layout_constraintStart_toStartOf="@+id/etSabahAksam"
+            app:layout_constraintTop_toBottomOf="@+id/etSabahAksam" />
+
+        <EditText
+            android:id="@+id/etSaat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Sabah Saat / Öğlen Saat / Akşam Saat"
+            android:inputType="textPersonName"
+            android:scrollbarSize="25dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/etTarih"
+            app:layout_constraintEnd_toEndOf="@+id/etAcTok"
+            app:layout_constraintStart_toStartOf="@+id/etAcTok"
+            app:layout_constraintTop_toBottomOf="@+id/etAcTok" />
+
+        <EditText
+            android:id="@+id/etTarih"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Ne Zaman Başladınız"
+            android:inputType="textPersonName"
+            android:scrollbarSize="25dp"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnEkle"
+            app:layout_constraintEnd_toEndOf="@+id/etSaat"
+            app:layout_constraintStart_toStartOf="@+id/etSaat"
+            app:layout_constraintTop_toBottomOf="@+id/etSaat" />
+
+        <Button
+            android:id="@+id/btnEkle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:scrollbarSize="25dp"
+            android:text="Ekle"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/listView_Canli"
+            app:layout_constraintEnd_toEndOf="@+id/etTarih"
+            app:layout_constraintStart_toStartOf="@+id/etTarih"
+            app:layout_constraintTop_toBottomOf="@+id/etTarih" />
+
+        <ListView
+            android:id="@+id/listView_Canli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="1dp"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnEkle" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

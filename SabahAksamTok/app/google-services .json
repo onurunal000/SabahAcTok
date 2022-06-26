@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "664136285591",
+    "project_id": "sabahaksamtok-e2e9b",
+    "storage_bucket": "sabahaksamtok-e2e9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:664136285591:android:167737e2754d125fbb18d2",
+        "android_client_info": {
+          "package_name": "com.example.sabahaksamtok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "664136285591-8v6re89tamnhnstvq4e1vv5kfeo1ii01.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDubb-nK3OJRwELS_5RUAOyC0WXtwJdGX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "664136285591-8v6re89tamnhnstvq4e1vv5kfeo1ii01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

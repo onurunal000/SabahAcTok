@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_view_ilacad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İlac Adı"
+        android:textSize="26sp" />
+    <TextView
+        android:id="@+id/text_view_sabahaksam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sabah / Akşam"
+        android:textSize="26sp"></TextView>
+    <TextView
+        android:id="@+id/text_view_actok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aç / Tok"
+        android:textSize="26sp"></TextView>
+    <TextView
+        android:id="@+id/text_view_saat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saat"
+        android:textSize="26sp"></TextView>
+    <TextView
+        android:id="@+id/text_view_tarih"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tarih"
+        android:textSize="26sp"></TextView>
+
+
+
+
+</LinearLayout>
